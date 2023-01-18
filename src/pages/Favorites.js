@@ -41,7 +41,7 @@ class Favorites extends Component {
     movieItems:[]
   };
 
-  baseURL = "http://ec2-54-157-169-238.compute-1.amazonaws.com:8300/favorite-movies";
+  baseURL = "https://ec2-54-157-169-238.compute-1.amazonaws.com:8300/favorite-movies";
 
   async componentDidMount() {
     const response = await fetch(this.baseURL);
@@ -53,7 +53,7 @@ class Favorites extends Component {
 
     const { favoriteMovies } = this.state;
     var movieItems=[]
-    var movieUrl = `http://localhost:8300/movie`;
+    var movieUrl = `https://ec2-54-157-169-238.compute-1.amazonaws.com:8300/movie`;
 
  
     for (let i = 0; i < favoriteMovies.length; i++) {
