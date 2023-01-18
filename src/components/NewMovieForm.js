@@ -22,7 +22,7 @@ function NewMovieForm() {
             description:enteredDescription
         };
        // console.log(movieData)
-       const baseURL="http://ec2-54-157-169-238.compute-1.amazonaws.com:8300/movie"
+       const baseURL="https://ec2-54-157-169-238.compute-1.amazonaws.com:8300/movie"
 
        fetch (baseURL,{
         method:"POST",
